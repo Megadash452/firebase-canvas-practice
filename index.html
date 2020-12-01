@@ -1,0 +1,46 @@
+<head>
+    <title> Code Next Canvas </title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Click and drag to draw something!</h1>
+
+    <p><canvas id="my-canvas"></canvas></p>
+
+    <p><button id="clear">erase board</button></p>
+
+    <hr>
+
+    <a href="https://firebase.google.com/docs/web/setup" target="_blank">Firebase Documentation</a>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyD8qujoyHhcD7lNzuduDCxRxdmeye_ibys",
+            authDomain: "fir-practice-12975.firebaseapp.com",
+            databaseURL: "https://fir-practice-12975.firebaseio.com",
+            projectId: "fir-practice-12975",
+            storageBucket: "fir-practice-12975.appspot.com",
+            messagingSenderId: "565059151003",
+            appId: "1:565059151003:web:a7654efa902c625305123e",
+            measurementId: "G-31W6FJ5HJ7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="canvas.js"></script>
+    <script src="main.js"></script>
+</body>
